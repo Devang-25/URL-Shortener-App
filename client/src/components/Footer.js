@@ -31,12 +31,12 @@ const Footer = () => {
         </p>
       </div>
       <div>
-        <h4>Company</h4>
+        <h4>Author</h4>
         <p>
-          About <br />
+          Devang Sharma <br />
           Our Team <br />
-          Careers
-          <br /> Contact
+          devshu25@gmail.com
+          <br /> Contact: +91-9953027469
         </p>
       </div>
       <div style={{ display: "flex", justifyContent: "space-around" }}>
