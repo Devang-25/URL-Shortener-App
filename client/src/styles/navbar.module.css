@@ -1,0 +1,103 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5rem;
+}
+.navbar img {
+  width: 100%;
+  max-width: 200px;
+}
+.links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+li {
+  padding: 1.2rem;
+}
+a {
+  color: hsl(260, 8%, 14%);
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+}
+
+.signup {
+  margin-left: 0.4rem;
+  color: white;
+  background-color: hsl(0, 0%, 75%);
+  font-size: 20px;
+  border: none;
+  border-radius: 25px;
+  padding: 0.8rem 2rem;
+  cursor: pointer;
+  outline: none;
+}
+.signup:hover {
+  background-color: hsl(260, 8%, 14%);
+  transition: 200ms ease-in;
+}
+.login {
+  color: hsl(260, 8%, 14%);
+  background-color: white;
+  font-size: 20px;
+  border: none;
+  border-radius: 25px;
+  padding: 0.8rem 2rem;
+  cursor: pointer;
+  outline: none;
+}
+.login:hover {
+  background-color: hsl(0, 0%, 75%);
+  color: white;
+  transition: 300ms ease-in;
+}
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    padding: 2.5rem 1rem;
+  }
+  .navbar img {
+    max-width: 150px;
+    margin-left: 25px;
+  }
+
+  .links {
+    width: 100%;
+    justify-content: space-around;
+  }
+  li {
+    padding: 1.2rem 0.4rem;
+    font-size: 0.9rem;
+  }
+  .signup,
+  .login {
+    font-size: 0.9rem;
+    padding: 0.2rem;
+  }
+
+  .signup {
+    background-color: white;
+    color: black;
+  }
+  .login:hover,
+  .signup:hover {
+    color: red;
+    background-color: white;
+  }
+}
+@media (max-width: 500px) {
+  li {
+    padding: 1.2rem 0.2rem;
+    font-size: 0.8rem;
+  }
+  .navbar img {
+    width: 100px;
+  }
+  .signup,
+  .login {
+    font-size: 0.8rem;
+  }
+}

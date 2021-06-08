@@ -1,0 +1,93 @@
+.shortenerSection {
+  background-color: #f0f1f6;
+  padding: 1.4rem;
+}
+.shortener {
+  width: 80%;
+  margin: auto;
+  max-width: 1400px;
+  position: relative;
+  background-color: hsl(255, 11%, 22%);
+  padding: 2rem;
+  opacity: 0.95;
+  color: white;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  margin-top: -10%;
+}
+.shortener::after {
+  position: absolute;
+  content: "";
+  background-image: url(../images/bg-shorten-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -2;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.shortener input {
+  padding: 1.3rem;
+  flex: 4;
+  margin-right: 1.5rem;
+  font-size: 1.5rem;
+  border-radius: 15px;
+  border: 2px solid hsl(255, 11%, 22%);
+}
+.shortener button {
+  flex: 1;
+  border-radius: 15px;
+  padding: 0.3rem;
+  background-color: hsl(0, 0%, 75%);
+  border: 2px solid hsl(255, 11%, 22%);
+  font-size: 1.5rem;
+  color: white;
+}
+.shortener input:focus {
+  outline-style: none;
+  border: 2px orange solid;
+  border-radius: 15px;
+}
+.shortener button:hover {
+  background-color: hsl(255, 11%, 22%);
+  border: 2px solid white;
+  transition: 300ms ease;
+}
+.shortener button:focus {
+  border: 2px solid hsl(180, 66%, 49%);
+  outline-style: none;
+  border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+  .shortener {
+    width: 90%;
+    flex-direction: column;
+    margin-top: -10%;
+    padding: 1rem;
+  }
+
+  .shortener input {
+    width: 90%;
+    font-size: 1rem;
+    padding: 0.6rem;
+    margin: auto;
+  }
+
+  .shortener button {
+    width: 30%;
+    font-size: 0.9rem;
+    margin: 0.4rem auto;
+  }
+}
+@media (max-width: 500px) {
+  .shortener button {
+    width: 60%;
+  }
+
+  .shortener {
+    margin-top: -15%;
+  }
+}

@@ -1,0 +1,31 @@
+.footer {
+  background-color: hsl(260, 8%, 14%);
+  width: 100%;
+  padding: 5rem;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) 1.5fr;
+  align-items: center;
+  gap: 1rem;
+}
+@media (max-width: 1024px) {
+  .footer {
+    padding: 5rem 3rem;
+    grid-template-columns: repeat(5, 0.75fr);
+    font-size: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer > div {
+    width: 60%;
+    text-align: center; 
+  }
+  .footer > div > p {
+    font-size: 0.9rem;
+  }
+}

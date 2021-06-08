@@ -1,0 +1,47 @@
+.wrapper {
+  color: black;
+  width: 80%;
+  padding: 0.9rem 2rem;
+  background-color: white;
+  margin: 2rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.copyButton {
+  border-radius: 15px;
+  background-color: hsl(0, 0%, 75%);
+  border: 2px solid hsl(255, 11%, 22%);
+  font-size: 1.5rem;
+  color: white;
+  padding: 1rem 1.5rem;
+}
+@media (max-width: 768px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    .copyButton {
+        font-size: 1rem;
+    }
+
+    .wrapper p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    .copyButton {
+        font-size: 0.8rem;
+        padding: 0.8rem;
+    }
+
+    .wrapper p {
+        font-size: 0.6rem;
+    }
+}
