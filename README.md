@@ -21,3 +21,8 @@ Devang Sharma, Senior Software Developer <br>
 devshu25@gmail.com <br>
 T : +91-9953027469 <br>
 
+## Screenshots
+
+![Home Page](https://github.com/Devang-25/URL-Shortener-App/blob/main/Screenshots/1.png)
+
+![Author](https://github.com/Devang-25/URL-Shortener-App/blob/main/Screenshots/2.png)
